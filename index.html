@@ -22,6 +22,11 @@
 								<li class="menu__item"><a href="">Inicio</a></li>
 								<li class="menu__item"><a href="">Servicios</a></li>
 								<li class="menu__item"><a href="">Contacto</a></li>
+								<li class="menu__item menu__cotizacion"><a href="">Obtén tu Cotizacíon</a></li>
+								<li class="menu__item menu__social">
+									<a class="" href=""><img src="images/IG.png" alt="" /></a>
+									<a class="" href=""><img src="images/IG.png" alt="" /></a>
+								</li>
 							</div>
 						</ul>
 					</nav>
@@ -34,7 +39,7 @@
 						</div>
 
 						<div class="hero__img">
-							<img src="images/19082.jpg" alt="Happy Family" />
+							<img src="images/hero-img.png" alt="Happy Family" />
 						</div>
 					</div>
 				</div>
@@ -76,55 +81,69 @@
 				<div class="bg">
 					<div class="container">
 						<h2>Mantente protegido <span class="services__span">en todo momento</span></h2>
-					</div>
-					<div class="services__grid">
-						<div class="service">
-							<div class="service__icon">
-								<img src="images/casa.png" alt="Icono Casa" />
+						<div class="services__grid">
+							<div class="service">
+								<a href="">
+									<div class="service__icon">
+										<img src="images/casa.png" alt="Icono Casa" />
+									</div>
+									<h3>Seguro de Casa</h3>
+								</a>
 							</div>
-							<h3>Seguro de Casa</h3>
-						</div>
 
-						<div class="service">
-							<div class="service__icon">
-								<img src="images/inundacion.png" alt="Icono Casa inundada" />
+							<div class="service">
+								<a href="">
+									<div class="service__icon">
+										<img src="images/inundacion.png" alt="Icono Casa inundada" />
+									</div>
+									<h3>Seguro contra Inundaciones</h3>
+								</a>
 							</div>
-							<h3>Seguro contra Inundaciones</h3>
-						</div>
 
-						<div class="service">
-							<div class="service__icon">
-								<img src="images/auto.png" alt="Icono auto" />
+							<div class="service">
+								<a href="">
+									<div class="service__icon">
+										<img src="images/auto.png" alt="Icono auto" />
+									</div>
+									<h3>Seguro de Auto</h3>
+								</a>
 							</div>
-							<h3>Seguro de Auto</h3>
-						</div>
 
-						<div class="service">
-							<div class="service__icon">
-								<img src="images/corazon.png" alt="Icono Corazon" />
+							<div class="service">
+								<a href="">
+									<div class="service__icon">
+										<img src="images/corazon.png" alt="Icono Corazon" />
+									</div>
+									<h3>Seguro de Vida</h3>
+								</a>
 							</div>
-							<h3>Seguro de Vida</h3>
-						</div>
 
-						<div class="service">
-							<div class="service__icon">
-								<img src="images/salud.png" alt="Icono Salud" />
+							<div class="service">
+								<a href="">
+									<div class="service__icon">
+										<img src="images/salud.png" alt="Icono Salud" />
+									</div>
+									<h3>Seguro de Salud</h3>
+								</a>
 							</div>
-							<h3>Seguro de Salud</h3>
-						</div>
 
-						<div class="service">
-							<div class="service__icon">
-								<img src="images/calc.png" alt="Icono Calculadora" />
+							<div class="service">
+								<a href="">
+									<div class="service__icon">
+										<img src="images/calc.png" alt="Icono Calculadora" />
+									</div>
+									<h3>Seguro Comercial</h3>
+								</a>
 							</div>
-							<h3>Seguro Comercial</h3>
-						</div>
 
-						<div class="service">
-							<div class="service__icon">
-								<img src="images/contabilidad.png" alt="Icono Finanzas" />
+							<div class="service">
+								<a href="">
+									<div class="service__icon">
+										<img src="images/contabilidad.png" alt="Icono Finanzas" />
+									</div>
+									<h3>Planificacion Financiera</h3>
+								</a>
 							</div>
-							<h3>Planificacion Financiera</h3>
 						</div>
 					</div>
 					<div class="div__shape">
@@ -150,43 +169,45 @@
 			</div>
 
 			<div class="contact">
-				<div>
-					<h2>Escribenos y resolveremos <span>todas tus dudas</span></h2>
-					<form name="contact" method="POST" data-netlify="true">
-						<p class="form__nombre">
-							<label>Nombre</label>
-							<input type="text" name="nombre" />
-						</p>
+				<div class="bg">
+					<div class="container contact__flex">
+						<h2>Escribenos y resolveremos <span>todas tus dudas</span></h2>
+						<form name="contact" method="POST" data-netlify="true">
+							<p class="form__nombre">
+								<label>Nombre</label>
+								<input type="text" name="nombre" />
+							</p>
 
-						<p class="form__apellido">
-							<label>Apellido</label>
-							<input type="text" name="apellido" />
-						</p>
+							<p class="form__apellido">
+								<label>Apellido</label>
+								<input type="text" name="apellido" />
+							</p>
 
-						<p class="form__email">
-							<label>Email</label>
-							<input type="email" name="email" />
-						</p>
+							<p class="form__email">
+								<label>Email</label>
+								<input type="email" name="email" />
+							</p>
 
-						<p class="form__mensaje">
-							<label>Mensaje</label>
-							<textarea name="mensaje" id="" cols="30" rows="10"></textarea>
-						</p>
+							<p class="form__mensaje">
+								<label>Mensaje</label>
+								<textarea name="mensaje" id="" cols="30" rows="10"></textarea>
+							</p>
 
-						<p class="form__btn">
-							<button type="submit" class="btn__green">ENVIAR</button>
-						</p>
-					</form>
+							<p class="form__btn">
+								<button type="submit" class="btn__green">ENVIAR</button>
+							</p>
+						</form>
+					</div>
 				</div>
 			</div>
 		</main>
 
 		<footer>
 			<div class="container">
-				<div class="footer__logo">
-					<img src="images/Debbie Larez white.png" alt="Logo White" />
-				</div>
 				<div class="footer__contact--info">
+					<div class="footer__logo">
+						<img src="images/Debbie Larez white.png" alt="Logo White" />
+					</div>
 					<div class="contact__info">
 						<img src="images/email.png" alt="Instagram icon" />
 						<p>debbielarez@gmail.com</p>
@@ -196,6 +217,28 @@
 						<img src="images/IG.png" alt="Instagram icon" />
 						<a href="">@debbielarezinsurance</a>
 					</div>
+
+					<div class="contact__info">
+						<img src="images/phone.png" alt="phone icon" />
+						<a href=""> +1 (832) 7126797</a>
+					</div>
+				</div>
+
+				<div class="footer__menu">
+					<a class="footer__menu--item" href="">Inicio</a>
+					<a class="footer__menu--item" href="">Contacto</a>
+				</div>
+
+				<div class="footer__services">
+					<a class="footer__service" href="">Seguro de Auto</a>
+					<a class="footer__service" href="">Seguro de Casa</a>
+					<a class="footer__service" href="">Seguro de Salud</a>
+					<a class="footer__service" href="">Seguro de Vida</a>
+				</div>
+				<div class="footer__services">
+					<a class="footer__service" href="">Seguro contra Inundaciones</a>
+					<a class="footer__service" href="">Seguro Comercial</a>
+					<a class="footer__service" href="">Plaificacion Comercial</a>
 				</div>
 			</div>
 		</footer>
