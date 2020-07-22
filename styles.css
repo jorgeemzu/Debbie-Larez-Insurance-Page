@@ -35,6 +35,7 @@ header {
 	background-image: url('images/hero-bg.png');
 	background-position: center;
 	background-repeat: no-repeat;
+	position: relative;
 }
 
 header > div {
@@ -43,7 +44,7 @@ header > div {
 }
 
 nav {
-	position: sticky;
+	position: relative;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -200,7 +201,23 @@ li + li {
 	animation-duration: 3s;
 	/* animation-delay: 1s; */
 	animation-fill-mode: forwards;
+	position: relative;
 }
+
+/* .hero {
+	position: relative;
+	z-index: 10;
+	height: 120vh;
+}
+
+.slide {
+	position: absolute;
+	display: grid;
+	place-items: center;
+	width: 100%;
+	height: 100%;
+	grid-template-rows: 1fr 1fr;
+} */
 
 .hero__img img {
 	transition: 3s ease;
@@ -259,7 +276,7 @@ li + li {
 }
 
 .services {
-	background-image: url('images/47.jpg');
+	background-image: url('images/47-min.jpg');
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -324,7 +341,7 @@ li + li {
 }
 
 .cotizacion {
-	background-image: url('images/47.jpg');
+	background-image: url('images/20488-min.jpg');
 	background-position: center;
 	background-size: cover;
 	text-align: center;
@@ -338,7 +355,7 @@ li + li {
 
 .contact {
 	margin-top: 5em;
-	background-image: url('images/20865.jpg');
+	background-image: url('images/20865-min.jpg');
 	background-position: center;
 	background-size: cover;
 	text-align: left;
@@ -464,10 +481,11 @@ footer {
 		height: 0;
 		list-style: none;
 		padding: 0;
-		top: 94px;
+		top: 60px;
 		transition: 0.5s ease;
 		overflow: hidden;
 		background-color: rgba(51, 51, 51, 0.95);
+		z-index: 1000;
 	}
 
 	.nav__menu--display {
@@ -511,17 +529,48 @@ footer {
 	}
 
 	.hero {
+		margin-top: 2em;
 		display: flex;
 		justify-content: space-between;
 		padding-top: 2em;
 		align-items: center;
 		position: relative;
 		z-index: 10;
+		height: 40vw;
+		/* position: relative;
+		z-index: 10;
+		height: 77vh; */
+	}
+
+	.slide {
+		position: absolute;
+		display: grid;
+		place-items: center;
+		width: 100%;
+		height: 100%;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.btn__next,
+	.btn__prev {
+		position: absolute;
+		color: white;
+		top: 50%;
+		z-index: 1000;
+	}
+
+	.btn__prev {
+		left: 30px;
+	}
+
+	.btn__next {
+		right: 30px;
 	}
 
 	.hero__text {
 		text-align: left;
 		width: 50%;
+		margin-left: 5em;
 	}
 
 	.hero__img {
