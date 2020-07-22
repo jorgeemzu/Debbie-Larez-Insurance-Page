@@ -163,6 +163,42 @@ li + li {
 	animation-fill-mode: forwards;
 } */
 
+/* inicio estilos pagina Glosario */
+.header__title {
+	color: var(--yellow);
+	text-align: center;
+	padding: 4em 0;
+}
+
+.glosario__title {
+	color: var(--black);
+	text-align: center;
+	margin-top: 2em;
+}
+
+.glosario__grid {
+	margin-top: 2em;
+	margin-bottom: 4em;
+}
+
+.glosario__grid h3 {
+	color: var(--green);
+	margin-bottom: 0.7em;
+}
+
+.glosario__item + .glosario__item {
+	margin-top: 2.5em;
+}
+
+.glosario__title,
+.glosario__grid {
+	animation-name: fadein;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
+
+/* Fin de estilos de la pagina glosario */
+
 .hero__text {
 	opacity: 0;
 	margin-top: 3em;
@@ -489,7 +525,7 @@ footer {
 	}
 
 	.nav__menu--display {
-		height: 300px;
+		height: 400px;
 	}
 
 	li + li {
@@ -524,10 +560,44 @@ footer {
 		align-items: center;
 	}
 
+	.menu__item {
+		font-size: 0.8rem;
+	}
+
 	.menu__cotizacion {
 		margin: 0;
 	}
 
+	.menu__active:after {
+		position: absolute;
+		content: '';
+		height: 2px;
+		left: 50%;
+		right: 50%;
+		bottom: -6px;
+		background-color: var(--green);
+		right: 0;
+		left: 0;
+	}
+
+	/* Inicio estilos pagina glosario glosario */
+
+	.glosario__title {
+		font-size: 1.5rem;
+		width: 50%;
+		margin-top: 4em;
+	}
+
+	.glosario__grid {
+		margin-top: 6em;
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+		gap: 3em;
+	}
+
+	.glosario__item + .glosario__item {
+		margin: 0;
+	}
 	.hero {
 		margin-top: 2em;
 		display: flex;
