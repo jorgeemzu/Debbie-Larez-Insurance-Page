@@ -10,6 +10,8 @@
 	--green: #0dc884;
 	--yellow: #e2d025;
 	--black: #333333;
+	--facebook: #3b5998;
+	--instagram: #e1306c;
 }
 
 html {
@@ -145,8 +147,9 @@ li + li {
 	background-color: var(--green);
 }
 
-.menu__social img {
-	max-width: 25px;
+.menu__social a i {
+	color: var(--yellow);
+	font-size: 1.5rem;
 }
 
 .menu__social {
@@ -198,6 +201,75 @@ li + li {
 }
 
 /* Fin de estilos de la pagina glosario */
+
+/* inicio estilos pagina contacto */
+
+.contacto__social {
+	text-align: center;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	gap: 2em;
+}
+
+.red__social + .red__social {
+	margin-top: 2em;
+}
+.red__social i {
+	font-size: 3rem;
+	display: block;
+	margin-bottom: 0.5em;
+}
+
+.red__social a {
+	text-decoration: none;
+	color: var(--green);
+	font-weight: 900;
+}
+.fa-instagram {
+	color: var(--instagram);
+}
+
+.fa-facebook-f {
+	color: var(--facebook);
+}
+
+.contact__section {
+	background-image: url('images/contact_page.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+.contact__section--container {
+	padding: 2em 0;
+	text-align: center;
+	color: white;
+}
+
+.phone {
+	margin-top: 2em;
+}
+
+.phone,
+.mail {
+	transition: 1s ease;
+}
+
+.mail i,
+.phone i {
+	font-size: 2rem;
+	display: block;
+	margin-bottom: 1em;
+}
+
+.phone a {
+	display: block;
+	text-decoration: none;
+	color: white;
+	margin-top: 1em;
+	transition: 1s ease;
+}
+
+/* Fin estilos pagina contacto */
 
 .hero__text {
 	opacity: 0;
@@ -598,6 +670,45 @@ footer {
 	.glosario__item + .glosario__item {
 		margin: 0;
 	}
+
+	/* fin estilos pgina cotacto */
+
+	/* inicio estilos pagina contacto */
+	.contacto__social {
+		margin-top: 4em;
+		margin-bottom: 7em;
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		transition: 1s ease;
+	}
+
+	.red__social:hover {
+		transform: scale(1.2);
+	}
+
+	.red__social {
+		transition: 1s ease;
+	}
+
+	.red__social + .red__social {
+		margin-top: 0;
+	}
+
+	.contact__section--container {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		padding-bottom: 3em;
+	}
+
+	.phone:hover,
+	.mail:hover,
+	.phone a:hover {
+		transform: scale(1.2);
+		color: var(--yellow);
+	}
+
 	.hero {
 		margin-top: 2em;
 		display: flex;
