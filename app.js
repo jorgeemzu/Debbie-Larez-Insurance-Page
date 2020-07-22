@@ -19,10 +19,11 @@ const heroImgs = [
 	{
 		img: 'images/hero-img-house-min.jpg',
 		texto:
-			'<h1>prueba <span>para Asegurar</span> tu auto</h1> <p>Es momento de proteger <span class="hero__span--green">Tu Inversion</span></p> <a class="btn__green" href="#">Obten tu póliza</a>',
+			'<h1>Es momento de <span>Proteger</span> tus bienes <span>Más Valiosos</span> </h1> <p>Protege hoy mismo <span class="hero__span--green">Tu Casa</span></p> <a class="btn__green" href="#">Obten tu póliza</a>',
 	},
 ];
 let index = 0;
+const sliderSpeed = 6500;
 function displayMenu(e) {
 	nav.classList.toggle('nav__menu--display');
 }
@@ -56,7 +57,7 @@ function nextImg() {
 	heroText.innerHTML = `${heroImgs[index].texto}`;
 
 	index++;
-	setTimeout(nextImg, 5000);
+	setTimeout(nextImg, sliderSpeed);
 	console.log(heroImge.style.opacity);
 }
 
