@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://kit.fontawesome.com/c644165e18.js" crossorigin="anonymous"></script>
+
+		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="styles.css" />
+		<script src="app.js" defer></script>
+		<title>Seguro de Auto</title>
+	</head>
+	<body>
+		<header>
+			<div class="glosario__container">
+				<div class="container">
+					<nav class="nav">
+						<div class="logo">
+							<img src="images/Debbie Larez Logo no shadow.png" alt="Logo" />
+						</div>
+						<div class="hamburger__menu"></div>
+						<ul class="nav__menu">
+							<div class="menu__items">
+								<li class="menu__item"><a href="index.html">Inicio</a></li>
+								<li class="menu__item"><a href="#services">Servicios</a></li>
+								<li class="menu__item"><a href="contacto.html">Contacto</a></li>
+								<li class="menu__item"><a href="">Glosario</a></li>
+								<li class="menu__item menu__cotizacion"><a href="">Obtén tu Cotizacíon</a></li>
+								<li class="menu__item menu__social">
+									<a class="" href="https://www.facebook.com/Debbielarezinsurance" target="_blank"
+										><i class="fab fa-facebook-f"></i
+									></a>
+									<a class="" href="https://www.instagram.com/debbielarezinsurance/" target="_blank"
+										><i class="fab fa-instagram"></i
+									></a>
+								</li>
+							</div>
+						</ul>
+                    </nav>
+                    
+                    <div class="header__title">
+                        <h2>Solicita tu Cotizacion</h2>
+                    </div>
+                </header>
+                        <div class="formulario auto">
+                            <div class=" bg">
+                                <div class="container">
+                                    <form class="form__auto" action="">
+                                        <div class="info__personal">
+                                            
+                                            <h2>Seguro de Auto</h2>
+                                                <div class="form__grid">
+                                                    <div class="nombre">
+                                                        <label for="nameCotizacion">Nombre</label>
+                                                        <input type="text" name="nameCotizacion" id="" />
+                                                    </div>
+            
+                                                    <div class="apellido">
+                                                        <label for="apellidoCotizacion">Apellido</label>
+                                                        <input type="text" name="apellidoCotizacion" id="" />
+                                                    </div>
+            
+                                                    <div class="fecha__nacimiento">
+                                                        <label for="date">Fecha de Nacimiento</label>
+                                                        <input type="date" name="date" id="date" value="2000-01-01" />
+                                                    </div>
+            
+                                                    <div class="direccion">
+                                                        <label for="direccionCotizacion">Dirección</label>
+                                                        <input type="text" name="direccionCotizacion" id="" />
+                                                    </div>
+            
+                                                    <div class="estado__civil">
+                                                        <label for="estado__civil">Esado Civil</label>
+                                                        <select name="estadoCivil" id="">
+                                                            <option value="soltero">Soltero</option>
+                                                            <option value="casado">Casado</option>
+                                                        </select>
+                                                    </div>
+            
+                                                    <div class="seguro">
+                                                        <label for="seguro">¿Posee un seguro actualmente?</label>
+                                                        <select name="seguro" id="">
+                                                            <option value="si">Si</option>
+                                                            <option value="no">No</option>
+                                                        </select>
+                                                    </div>
+                                                        
+                                             </div>
+                                        
+    
+                                    </div>
+                                    <div class="info__vehiculo">
+                                        <h2>Informacion del Vehiculo</h2>
+                                        <div class="form__grid">
+                                            
+                                            <div class="marca__vehiculo">
+                                                <label for="marca">Marca</label>
+                                                <input type="text" name="modelo" id="">
+                                            </div>
+    
+                                            <div class="modelo__vehiculo">
+                                                <label for="marca">Modelo</label>
+                                                <input type="text" name="modelo" id="">
+                                            </div>
+    
+                                            <div class="año__vehiculo">
+                                                <label for="marca">Año</label>
+                                                <input type="text" name="año" id="">
+                                            </div>
+                                            <div class="tipo__seguro">
+                                                <label for="tipoSeguro">Tipo de seguro a Solicitar</label>
+                                                <select name="tipoSeguro" id="">
+                                                    <option value="fullcover">FullCover</option>
+                                                    <option value="liability">Liability</option>
+                                                </select>
+                                            </div>
+    
+                                            <div class="tipo__auto">
+                                                <label for="tipoAuto">Tipo de Auto</label>
+                                                <select name="tipoAuto" id="">
+                                                    <option value="comercial">Comercial</option>
+                                                    <option value="personal">Personal</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                         <div class="form__btn">
+
+                                             <button class="btn__green type="submit">Enviar</button>
+                                        </div>
+
+                                         </div>       
+                                    </form>
+
+                                    
+
+                                </div>
+                                
+                                
+
+                            </div>
+                        </div>
+                        <div class="contact">
+                            <div class="bg">
+                                <div class="container contact__flex">
+                                    <h2>¿Tienes alguna Duda? <span>Contáctame</span></h2>
+                                    <form name="contact" method="POST" data-netlify="true">
+                                        <p class="form__nombre">
+                                            <label>Nombre</label>
+                                            <input type="text" name="nombre" required />
+                                        </p>
+            
+                                        <p class="form__apellido">
+                                            <label>Apellido</label>
+                                            <input type="text" name="apellido" required />
+                                        </p>
+            
+                                        <p class="form__email">
+                                            <label>Email</label>
+                                            <input type="email" name="email" required />
+                                        </p>
+            
+                                        <p class="form__mensaje">
+                                            <label>Mensaje</label>
+                                            <textarea name="mensaje" id="" cols="30" rows="10" required></textarea>
+                                        </p>
+            
+                                        <p class="form__btn">
+                                            <button type="submit" class="btn__green">ENVIAR</button>
+                                        </p>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <footer>
+                            <div class="container">
+                                <div class="footer__contact--info">
+                                    <div class="footer__logo">
+                                        <img src="images/Debbie Larez white.png" alt="Logo White" />
+                                    </div>
+                                    <div class="contact__info">
+                                        <img src="images/email.png" alt="Instagram icon" />
+                                        <p>debbielarez@gmail.com</p>
+                                    </div>
+                
+                                    <div class="contact__info">
+                                        <img src="images/IG.png" alt="Instagram icon" />
+                                        <a href="">@debbielarezinsurance</a>
+                                    </div>
+                
+                                    <div class="contact__info">
+                                        <img src="images/phone.png" alt="phone icon" />
+                                        <a href=""> +1 (832) 7126797</a>
+                                    </div>
+                                </div>
+                
+                                <div class="footer__menu">
+                                    <a class="footer__menu--item" href="index.html">Inicio</a>
+                                <a class="footer__menu--item" href="contact.html">Contacto</a>
+                                <a class="footer__menu--item" href="contact.html">Servicios</a>
+                                <a class="footer__menu--item" href="glosario.html">Glosario</a>
+                                </div>
+                
+                                <div class="footer__services">
+                                    <a class="footer__service" href="">Seguro de Auto</a>
+                                    <a class="footer__service" href="">Seguro de Casa</a>
+                                    <a class="footer__service" href="">Seguro de Salud</a>
+                                    <a class="footer__service" href="">Seguro de Vida</a>
+                                </div>
+                                <div class="footer__services">
+                                    <a class="footer__service" href="">Seguro contra Inundaciones</a>
+                                    <a class="footer__service" href="">Seguro Comercial</a>
+                                    <a class="footer__service" href="">Plaificacion Comercial</a>
+                                </div>
+                            </div>
+                        </footer>
+	</body>
+</html>

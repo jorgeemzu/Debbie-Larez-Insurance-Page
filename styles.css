@@ -555,6 +555,61 @@ footer {
 	transform: translateY(0px);
 }
 
+.formulario .bg {
+	padding: 3em 0;
+}
+
+.auto {
+	background-image: url('images/4060.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.form__auto label {
+	display: block;
+	margin: 2em 0 1em 0;
+	color: white;
+}
+
+select {
+	background-color: transparent;
+	padding: 1em;
+	border: solid 2px var(--yellow);
+	color: white;
+	cursor: pointer;
+}
+
+select option {
+	background-color: var(--black);
+	color: var(--yellow);
+	padding: 0.8em;
+}
+
+input[type='date'] {
+	color: white;
+}
+
+.info__vehiculo {
+	margin-top: 3em;
+}
+
+.formulario h2 {
+	color: var(--green);
+}
+
+.formulario button {
+	margin-top: 4em;
+}
+
+.form__grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	gap: 2em;
+
+	align-items: center;
+}
+
 @keyframes apear {
 	0% {
 		opacity: 0;
@@ -610,6 +665,10 @@ footer {
 
 	.service + .service {
 		margin-top: 4em;
+	}
+
+	.formulario .bg {
+		text-align: center;
 	}
 }
 
@@ -877,5 +936,13 @@ footer {
 	.footer__menu--item + .footer__menu--item,
 	.footer__service + .footer__service {
 		margin-top: 2em;
+	}
+
+	.info__vehiculo {
+		margin-top: 7em;
+	}
+
+	.formulario button {
+		margin-top: 5em;
 	}
 }
